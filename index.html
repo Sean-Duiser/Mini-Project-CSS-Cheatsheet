@@ -11,18 +11,28 @@
 <body>
     <header>
         <h1>Mini Project | CSS Snippets</h1>
-        <p>This is a short description about CSS cheatsheets. They're fun to use</p>
+        <p>These are some of the snippets I found most useful to have handy!</p>
     </header>
 
     <main>
         <article>
             <section>
-                <h2>Flex Row</h2>
-                <p>This paragraph explains flex row.</p>
+                <h2>Responsive - Mobile (articles & headers)</h2>
+                <p>This code makes any articles and headers on the page responsive for viewing on mobile devices.</p>
                 <pre>
                     <code>
-.d-flex {
-    display: flex !important;
+@media screen and (max-width: 640px) {
+    article {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        height: 100%;
+    }
+    header {
+        width: 100%;
+    }
 }
                     </code>
                 </pre>
@@ -31,13 +41,24 @@
 
         <article>
             <section>
-                <h2>Flex Row</h2>
-                <p>This paragraph explains flex row.</p>
+                <h2>Make an Element a Flexbox</h2>
+                <p>Turns this element into a flexbox</p>
                 <pre>
                     <code>
-.d-flex {
-    display: flex !important;
-}
+element {
+    display: flex;
+    flex-direction: row;
+    /* Centers along the main axis determined by flex-direction */
+    justify-content: center;
+    /* Centers along the opposite axis */
+    align-items: center;
+    width: 90%;
+    /* Uses the height of the viewport */
+    height: 100vh;
+    margin: 0 auto;
+    border-style: solid;
+    border-width: 2px;
+    }
                     </code>
                 </pre>
             </section>
@@ -45,13 +66,13 @@
 
         <article>
             <section>
-                <h2>Flex Row</h2>
-                <p>This paragraph explains flex row.</p>
+                <h2>Box Sizing</h2>
+                <p>Allows for an Elements Padding and Border to be included in total Width and Height</p>
                 <pre>
                     <code>
-.d-flex {
-    display: flex !important;
-}
+* {
+    box-sizing: border-box;
+    }
                     </code>
                 </pre>
             </section>
@@ -59,12 +80,27 @@
 
         <article>
             <section>
-                <h2>Flex Row</h2>
-                <p>This paragraph explains flex row.</p>
+                <h2>Pseudo-Classes</h2>
+                <p>The Basic CSS Psuedo Classes can be used to give Elements different properties based on user action</p>
                 <pre>
                     <code>
-.d-flex {
-    display: flex !important;
+/* The user's cursor is positioned over the element */
+button:hover {
+    background-color: #772014;
+    color: #fff;
+}
+
+/* The user is actively pressing down on the element */
+button:active {
+    font-size: 180%;
+    box-shadow: 0 0 10px #000 inset;
+}
+
+/* The element is currently in focus, 
+either by tabbing to or clicking on it */
+button:focus {
+    outline: none;
+    border-color: #8ac4ff;
 }
                     </code>
                 </pre>
@@ -73,13 +109,19 @@
         
         <article>
             <section>
-                <h2>Flex Row</h2>
-                <p>This paragraph explains flex row.</p>
+                <h2>Style Selection Box</h2>
+                <p>Allows for customization of Selection Boxes</p>
                 <pre>
                     <code>
-.d-flex {
-    display: flex !important;
-}
+select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url(../images/arrow.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    }
                     </code>
                 </pre>
             </section>
@@ -87,20 +129,23 @@
 
         <article>
             <section>
-                <h2>Flex Row</h2>
-                <p>This paragraph explains flex row.</p>
+                <h2>CSS Variable</h2>
+                <p>Allows for the creation of customizable CSS Variables</p>
                 <pre>
                     <code>
-.d-flex {
-    display: flex !important;
-}
+:root {
+    /* declare a variable with `--` syntax */
+    --dark: darkred;
+    --light: #fff;
+    --navlink-color: lightpink;
+    }
                     </code>
                 </pre>
             </section>
         </article>
     <footer>
         <h1>Sean's CSS cheatsheet</h1>
-        <p>making this responsive is hard</p>
+        <p>Version 1.0 (02/22/22) 📅 </p>
     </footer>
     </main>
 </body>

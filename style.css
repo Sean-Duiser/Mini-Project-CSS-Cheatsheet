@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 main {
     display: flex;
     flex-direction: row;
@@ -6,17 +10,18 @@ main {
 
 header {
     text-align: center;
-    border: 8px solid cyan;
+    border: 8px groove cyan;
     margin-bottom: 20px;
 }
 
 body {
     background-color: rgba(255, 251, 40, 0.808);
+    height: 100vh;
 }
 
 footer {
     text-align: center;
-    border: 8px solid cyan; 
+    border: 8px groove cyan; 
     width: 100%;
 }
 
@@ -29,11 +34,16 @@ article {
 }
 
 section {
-    border: 4px dashed rgb(255, 37, 146);
+    border: 4px rgb(255, 37, 146);
+    border-style:groove;
     padding: 20px;
     margin-bottom: 20px;
     width: 85%;
-    user-select: all;
+}
+
+code {
+    user-select:all;
+    display: flex;
 }
 
 @media screen and (max-width: 1008px) {
