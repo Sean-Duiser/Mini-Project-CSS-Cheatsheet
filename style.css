@@ -32,7 +32,8 @@ section {
     border: 4px dashed rgb(255, 37, 146);
     padding: 20px;
     margin-bottom: 20px;
-    width: 85%
+    width: 85%;
+    user-select: all;
 }
 
 @media screen and (max-width: 1008px) {
