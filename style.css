@@ -12,6 +12,24 @@ header {
     text-align: center;
     border: 8px groove cyan;
     margin-bottom: 20px;
+    background-color:rgb(255, 109, 243);
+}
+
+header:hover {
+    border: 8px groove rgb(255, 109, 243);
+    background-color: cyan;
+}
+
+h2 {
+    text-align: center;
+    border: 4px cyan solid;
+    margin-top: -40px;
+    background-color:rgb(255, 109, 243);
+}
+
+h2:hover {
+    background-color: rgba(0, 255, 255);
+    border: 4px rgb(255, 109, 243) solid;
 }
 
 body {
