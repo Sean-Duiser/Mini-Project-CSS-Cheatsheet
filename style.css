@@ -39,6 +39,11 @@ section {
     padding: 20px;
     margin-bottom: 20px;
     width: 85%;
+    transition: all 250ms ease; 
+}
+
+section:hover {
+    background-color:rgba(255, 63, 239, 0.233);
 }
 
 code {
