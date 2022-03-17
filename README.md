@@ -9,5 +9,10 @@ This cheatsheet contains CSS snippets that I found to be the most useful to have
 ## Technologies Utilized
 This site was created using a combination of HTML and CSS.
 
+## Authors and Acknowledgements
+Sean Duiser:
+sean.duiser.develop@gmail.com
+704-296-8335
+
 ## Deployed Site
 [link to the live site](https://sean-duiser.github.io/Mini-Project-CSS-Cheatsheet/) 
