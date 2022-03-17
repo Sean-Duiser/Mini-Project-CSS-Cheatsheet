@@ -6,5 +6,8 @@ This cheatsheet contains CSS snippets that I found to be the most useful to have
 ## Visuals
 ![screenshot of updated page](./assets/mp2Screenshot.png)
 
+## Technologies Utilized
+This site was created using a combination of HTML and CSS.
+
 ## Deployed Site
 [link to the live site](https://sean-duiser.github.io/Mini-Project-CSS-Cheatsheet/) 

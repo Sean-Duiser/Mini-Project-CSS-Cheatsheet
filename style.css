@@ -57,16 +57,19 @@ section {
     padding: 20px;
     margin-bottom: 20px;
     width: 85%;
-    transition: all 250ms ease; 
+    transition: all 250ms ease;
+    display: flex;
+    flex-direction: column;
 }
 
 section:hover {
     background-color:rgba(255, 63, 239, 0.233);
 }
 
-code {
+pre {
     user-select:all;
-    display: flex;
+    display: flexbox;
+    flex-wrap: wrap;
 }
 
 @media screen and (max-width: 1008px) {
